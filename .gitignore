@@ -1,0 +1,51 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# PyInstaller build output
+build/
+dist/
+*.spec
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# Logs & debug
+*.log
+*.tmp
+*.bak
+*.swp
+
+# IDE/editor junk
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# pyinstaller temp files
+*.manifest
+*.dll
+*.so
+
+# Thumbs.db (windows)
+Thumbs.db
+ehthumbs.db
+
+# Local user config
+*.local
+*.cfg
+*.ini
+
+# test / scratch files
+test_*.py
+scratch.py
+notes.txt
