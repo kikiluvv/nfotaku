@@ -1,6 +1,6 @@
-# 🧙‍♂️ nfomancer
+# 🌟 NFotaku
 
-Customize and rearrange your FL Studio folders with a little bit of magic.
+Customize and rearrange your FL Studio folders with the help from the waifu of your dreams.
 
 ---
 
@@ -20,81 +20,75 @@ Customize and rearrange your FL Studio folders with a little bit of magic.
 
 ```bash
 pip install pyqt5
-🧵 usage
-Run the program:
+```
 
-bash
-Copy
-Edit
+## 🧵 usage
+1. Run the program:
+```bash
 python3 main.py
-Select your main drum kit folder
+```
+2. Select your main drum kit folder
 
-Reorder the subfolders how you want them to appear in FL
+3. Reorder the subfolders how you want them to appear in FL
 
-Pick colors (optional)
+4. Pick colors (optional)
 
-Click “Generate .nfo Files”
+5. Click “Generate .nfo Files”
 
-✅ Done — check each subfolder for a .nfo
+6. ✅ Done — check each subfolder for a .nfo
 
-🛠️ building the executable
+## 🛠️ building the executable
 If you want to package nfomancer into a standalone app (Windows or macOS), use the included build.py script:
 
-Make sure you have Python and PyInstaller installed globally:
+1. Make sure you have Python and PyInstaller installed globally:
 
-bash
-Copy
-Edit
+```bash
 pip install pyinstaller
-Run the build script from the root project folder:
+```
 
-bash
-Copy
-Edit
+2. Run the build script from the root project folder:
+
+```bash
 python build.py
-The script will bundle the app into a single executable with all assets and an icon:
+```
 
-On Windows, it picks the .ico icon and uses correct path separators
+- The script will bundle the app into a single executable with all assets and an icon
 
-On macOS, it picks the .png icon
+- Assets folders (assets/ and nfomancer/assets/) are included in the build
 
-Assets folders (assets/ and nfomancer/assets/) are included in the build
+- After a successful build, check the dist/ folder for your app:
 
-After a successful build, check the dist/ folder for your app:
+`dist/NFotaku.exe` on Windows
 
-dist/NFotaku.exe on Windows
+`dist/NFotaku` on macOS
 
-dist/NFotaku on macOS
+*Note: The build script requires PyInstaller to be in your PATH. Also, ensure your folder paths have no strange spaces or characters.*
 
-Note: The build script requires PyInstaller to be in your PATH. Also, ensure your folder paths have no strange spaces or characters.
-
-📁 file structure
-css
-Copy
-Edit
-nfomancer/
+## 📁 file structure
+```
+nfotaku/
 ├── main.py
-├── logic.py
-├── models.py
 ├── build.py
-├── assets/
-│   ├── icon.png           # macOS app icon
-│   ├── icon.ico           # Windows app icon
-│   ├── tits.png           # background image
-│   └── ambient.wav        # optional audio loop
-└── nfomancer/
-    └── assets/            # GUI assets folder
-🛑 notes
-IconIndex, HeightOfs, and SortGroup are set in models.py and logic.py.
+├── assets/                 # Global Assets
+│   ├── icon.png            # App Icon
+└── nfotaku/
+    ├── logic.py
+    ├── models.py
+    ├── build.py
+    └── assets/             # GUI assets
+        ├── bg.gif          # background image
+        └── bg.mp3          # optional audio loop
 
-FL Studio uses .nfo files to style folders inside the Browser pane.
+```
 
-The executable bundles assets so you don’t need Python to run it.
+## 🛑 notes
+- IconIndex, HeightOfs, and SortGroup are set in models.py and logic.py.
+- FL Studio uses .nfo files to style folders inside the Browser pane.
+- The executable bundles assets so you don’t need Python to run it.
+- Feel free to tweak and remix.
 
-Feel free to tweak and remix — it’s your ritual.
-
-🩸 credits
+## 🩸 credits
 built by 1kikiluvv for appeal2heaven
 
-🖤 license
-MIT — do whatever you want
+## 🖤 license
+MIT — do whatever
